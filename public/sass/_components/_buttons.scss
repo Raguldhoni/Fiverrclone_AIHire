@@ -1,0 +1,133 @@
+/*--Button Area Start--*/
+/*--Button Area Start--*/
+.cmn--btn {
+	border-radius: 100px;
+	padding: 14px 31px 15px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 130%;
+	display: inline-block;
+	text-transform: capitalize;
+	position: relative;
+	background: var(--base);
+	overflow: hidden;
+	gap: 12px;
+	span{
+		position: relative;
+		z-index: 1;
+		transition: all 0.5s;
+		color: var(--white);
+	}
+	&::before{
+		position: absolute;
+		content: "";
+		top: 50%;
+		transform: translate(-50%, -50%);
+		left:50%;
+		width: 0px;
+		height: 0px;
+		background: var(--hover);
+		transition: all 0.5s;
+	}
+	&:hover{
+		&::before{
+			width: 105%;
+			height: 105%;
+		}
+	}
+}
+.outline__btn{
+	background: transparent;
+	border: 1px solid var(--base);
+	padding: 11px 25px 13px;
+	span{
+		color: var(--base);
+	}
+	&:hover{
+		span{
+			color: var(--white);
+		}
+	}
+}
+
+.cmn--btn2 {
+	border-radius: 100px;
+	padding: 14px 31px 15px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 130%;
+	display: inline-block;
+	text-transform: capitalize;
+	position: relative;
+	background: var(--base2);
+	overflow: hidden;
+	gap: 12px;
+	span{
+		position: relative;
+		z-index: 1;
+		transition: all 0.5s;
+		color: var(--title);
+	}
+	&::before{
+		position: absolute;
+		content: "";
+		top: 50%;
+		transform: translate(-50%, -50%);
+		left:50%;
+		width: 0px;
+		height: 0px;
+		background: linear-gradient(101.84deg, #f4c02f 1.08%, #c99c16c5 98.75%);
+		transition: all 0.5s;
+	}
+	&:hover{
+		span{
+			color: var(--white);
+		}
+		&::before{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.outline__btn2{
+	background: transparent;
+	border: 1px solid var(--hover);
+	padding: 11px 25px 13px;
+	span{
+		color: var(--hover);
+	}
+	&:hover{
+		&::before{
+			background: var(--hover);
+		}
+		span{
+			color: var(--white);
+		}
+	}
+}
+
+//common btn three
+.logout__btn{
+	@include breakpoint(max-sm){
+		margin-top: 15px;
+	}
+}
+.cmn--logout{
+	padding: 15px 32px 17px;
+	border-radius: 100px;
+	border: var(--hover);
+	color: var(--hover);
+	border: 1px solid var(--hover);
+	span{
+		color: var(--hover);
+	}
+	i{
+		font-size: 18px;
+		padding-right: 6px;
+	}
+	@include breakpoint(max-sm){
+		padding: 9px 20px 11px;
+	}
+}
+/*--Button Area End--*/
+/*--Button Area End--*/

@@ -1,0 +1,166 @@
+//footer
+.footer__section{
+    background: url(/img/footer/footerbg1.jpg) no-repeat center center;
+    background-size: cover;
+}
+//footer top
+.quick__link{
+    li{
+        &:not(:last-child){
+            margin-bottom: 7px;
+        }
+        a{
+            &:hover{
+                color: var(--hover);
+            }
+        }
+    }
+}
+.footer__contact{
+    li{
+        &:not(:last-child){
+            margin-bottom: 16px;
+        }
+        a{
+            span{
+                width: calc(100% - 55px);
+                display: block;
+            }
+            &:hover{
+                color: var(--hover);
+            }
+        }
+    }
+}
+.footer__item{
+    .footer__logo{
+        @include breakpoint(max-xxl){
+            max-width: 200px;
+            img{
+                width: 100%;
+            }
+        }
+        @include breakpoint(max-lg){
+            max-width: 140px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .cef__pra{
+        @include breakpoint(max-lg){
+            font-size: 16px;
+        }
+    }
+    form{
+        justify-content: space-between;
+        border-radius: 100px;
+        border: 1px solid var(--base);
+        padding: 8px;
+        input{
+            outline: none;
+            height: 52px;
+            width: 100%;
+            border-radius: 30px;
+            border: unset;
+            background: transparent;
+            padding-left: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--tableborder);
+        }
+        ::placeholder{
+            color: var(--tableborder);
+        }
+        .cmn--btn{
+            border: unset;
+            display: flex;  
+            align-items: center;
+            justify-content: center;
+            i{
+                margin: 0;
+                padding: 0;
+                font-size: 20px;
+            }
+        }
+        @include breakpoint(max-xl){
+            padding: 4px;
+            .cmn--btn{
+                padding: 10px 25px;
+            }
+            input{
+                height: initial;
+                padding: 6px 15px 10px;
+            }
+        }
+    }
+    .social{
+        li{
+            a{
+                &:hover{
+                    background: var(--base);
+                }
+            }
+        }
+    }
+}
+//footer bottom
+.footer__bottom{
+    justify-content: space-between;
+    padding: 32px 0;
+    border-top: 1px solid var(--title);
+    @include breakpoint(max-lg){
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 0;
+    }
+    p{
+        text-align: center;
+    }
+    @include breakpoint(max-xxsmall){
+        padding: 25px 0;
+    }
+}
+.help__support{
+    gap: 24px;
+    @include breakpoint(max-xxsmall){
+        flex-wrap: wrap;
+        gap: 2px 20px;
+        justify-content: center;
+    }
+}
+//footer
+
+//subcribtion section
+.cmn__form{
+    justify-content: space-between;
+    background: var(--white);
+    border-radius: 100px;
+    padding: 12px 12px;
+    input{
+        width: 100%;
+        background: transparent;
+        outline: none;
+        border: unset;
+        color: var(--pragraph2);
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 12px;
+        @include inter;
+        @include breakpoint(max-sm){
+            padding-left: 8px;
+            font-size: 12px;
+        }
+    }
+    .cmn--btn{
+        padding: 0;
+        width: 180px;
+        padding: 5px 5px 8px;
+        height: 45px;
+        border: unset;
+        @include breakpoint(max-sm){
+            font-size: 14px;
+        }
+    }
+}
+//subcribtion two section

@@ -1,0 +1,540 @@
+//banner section one
+@import '../_abstracts/mixins';
+.bg__img1{
+    background: url(/img/bn/bnbg1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.banner__aitag{
+    gap: 8px;
+    a{
+        padding: 8px 20px 10px;
+        @include breakpoint(max-xs){
+            padding: 8px 15px 10px;
+        }
+    }
+    .aitag__text{
+        margin-right: 8px;
+        display: block;
+    }
+    @include breakpoint(max-xxl){
+        flex-wrap: wrap;
+    }
+    @include breakpoint(max-lg){
+        margin-top: 30px;
+    }
+}
+.banner__onespace{
+    padding: 70px 0 78px;
+    .search__component{
+        input{
+            width: 100%;
+        }
+        .cmn--btn{
+            padding: 14px 31px 15px 20px;
+        }
+        @include breakpoint(max-xs){
+            padding: 4px;
+            input{
+                font-size: 12px;
+            }
+            .cmn--btn{
+                font-size: 12px;
+            }
+        }
+    }
+    @include breakpoint(max-xxl){
+        padding: 35px 0 50px;
+        .d2{
+            font-size: 52px;
+        }
+    }
+    @include breakpoint(max-sm){
+        .d2{
+            font-size: 42px;
+        }
+    }
+    @include breakpoint(max-xs){
+        h4{
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .d2{
+            font-size: 34px;
+        }
+    }
+}
+.banner__thumb1{
+    z-index: 1;
+    .thumb__vector1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        animation: cir360 20s linear infinite;
+        animation-delay: 2s;
+        @include breakpoint(max-sm){
+            display: none;
+        }
+    }
+    .thumb__vector2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        animation: skew1 10s linear infinite;
+    }
+}
+//banner section one
+
+//banner-two section two
+.bg__img2{
+    background: url(/img/bn/bnbg2.jpg) no-repeat center center;
+    background-size: cover;
+}
+.banner__btn2{
+    gap: 24px;
+}
+.banner__thumb2{
+    margin-top: -180px;
+    @include breakpoint(max-xxxl){
+        margin-top: -100px;
+        width: 600px;
+        height: 700px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    @include breakpoint(max-xxl){
+        margin-left: -50px;
+    }
+    @include breakpoint(max-xl){
+        margin-left: -70px;
+        width: 550px;
+        margin-top: -50px;
+    }
+}
+.banner__twospace{
+   @include breakpoint(max-xxxl){
+    padding: 80px 0 100px;
+   }
+   @include breakpoint(max-xxl){
+    .d2{
+        font-size: 52px;
+    }
+   }
+   @include breakpoint(max-xl){
+    .d2{
+        font-size: 42px;
+    }
+   }
+   @include breakpoint(max-lg){
+    padding: 90px 0 105px;
+    h4{
+        margin-bottom: 20px;
+    }
+    .d2{
+        margin-bottom: 25px;
+    }
+   }
+   @include breakpoint(max-md){
+        padding: 80px 0 105px;
+    }
+   @include breakpoint(max-sm){
+        padding: 90px 0 105px;
+        h4{
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .d2{
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+   }
+   @include breakpoint(max-xs){
+        h4{
+            font-size: 18px;
+        }
+        .d2{
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .banner__btn2{
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+    }
+    @include breakpoint(max-md){
+        padding: 70px 0 85px;
+    }   
+}
+//banner-two section two
+
+//banner-three section three
+.banner__threespace{
+    padding: 120px 0 270px;
+    position: relative;
+    z-index: 1;
+    .search__component{
+        border: 1px solid var(--pra);
+        input{
+            color: var(--white);
+            width: 100%;
+        }
+        ::placeholder{
+            color: var(--white);
+        }
+        .cmn--btn{
+            background: var(--base2);
+            span{
+                color: var(--title);
+            }
+            &:hover{
+                span{
+                    color: var(--white);
+                }
+            }
+            @include breakpoint(max-xs){
+                padding: 7px 20px 7px 10px;
+                font-size: 12px;
+                gap: 5px;
+                i{
+                    font-size: 10px;
+                }
+            }
+        }
+        @include breakpoint(max-xl){
+            background: #201b2f;
+        }
+    }
+    h4{
+        @include breakpoint(max-md){
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        @include breakpoint(max-xs){
+            margin-bottom: 15px;
+        }
+    }
+    .d1{
+        @include breakpoint(max-xxl){
+            font-size: 52px;
+        }
+        @include breakpoint(max-md){
+            font-size: 36px;
+            margin-bottom: 24px;
+        }
+        @include breakpoint(max-xs){
+            font-size: 28px;
+            margin-bottom: 24px;
+        }
+    }
+}
+.bg__img3{
+    background: url(/img/bn/bnbg3.jpg) no-repeat center center;
+    background-size: cover;
+}
+//banner-three section three
+
+//banner Elelement
+.line__hotemtwo,
+.element__round,
+.element__dash,
+.element__doubble,
+.element__brain,
+.element__single,
+.element__man{
+    position: absolute;
+    @include breakpoint(max-xxxl){
+        &:not(.element__round, .element__brain){
+            display: none;
+        }
+    }
+}
+.element__man{
+    left: 72px;
+    top: 229px;
+    animation: element1 2s linear infinite;
+}
+.element__single{
+    bottom: 40px;
+    left: 76px;
+    animation: updown10 2s linear infinite;
+}
+.element__brain{
+    bottom: 60px;
+    right: 70px;
+    animation: element1 2s linear infinite;
+    @include breakpoint(max-xs){
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+    }
+}
+.element__doubble{
+    top: 230px;
+    right: 128px;
+    animation: updown10 2s linear infinite;
+}
+.element__dash{
+    bottom: 95px;
+    right: 181px;
+    animation: cir5 2s linear infinite;
+}
+.element__round{
+    left: 50%;
+    top: 230px;
+    animation: cir360 9s linear infinite;
+    @include breakpoint(max-md){
+        left: 80%;
+        top: 220px;
+    }
+}
+.line__hotemtwo{
+    position: absolute;
+    top: 220px;
+    left: 0;
+}
+.home3__elementleft{
+    position: absolute;
+    bottom: 200px;
+    left: 66px;
+    border-radius: 600px;
+    width: 312px;
+    height: 451px;
+    animation: updown10 2s linear infinite;
+    @include breakpoint(max-xxxl){
+        left: 8px;
+        width: 250px;
+        height: 380px;
+    }
+    @include breakpoint(max-xl){
+        left: 8px;
+        width: 180px;
+        height: 280px;
+    }
+    @include breakpoint(max-md){
+        left: 8px;
+        width: 120px;
+        height: 200px;
+    }
+    @include breakpoint(max-sm){
+        left: 8px;
+        width: 90px;
+        height: 140px;
+        bottom: 150px;
+    }
+}
+.home3__elementright{
+    position: absolute;
+    right: 86px;
+    top: 235px;
+    border-radius: 600px;
+    width: 312px;
+    height: 451px;
+    animation: updown10 2s linear infinite;
+    @include breakpoint(max-xxxl){
+        right: 8px;
+        width: 250px;
+        height: 380px;
+    }
+    @include breakpoint(max-xl){
+        right: 8px;
+        width: 180px;
+        height: 280px;
+    }
+    @include breakpoint(max-md){
+        right: 8px;
+        width: 120px;
+        height: 200px;
+    }
+    @include breakpoint(max-sm){
+        top: 190px;
+        right: 8px;
+        width: 90px;
+        height: 140px;
+    }
+}
+.home3__linedash{
+    position: absolute;
+    top: 240px;
+    left: 100px;
+    animation: element1 2s linear infinite;
+    z-index: 1;
+}
+.home3__linedash2{
+    position: absolute;
+    bottom: 140px;
+    right: 40px;
+    animation: element1 2s linear infinite;
+    z-index: 1;
+    @include breakpoint(max-xxs){
+        width: 152px;
+    }
+}
+.home3__shapetast{
+    position: absolute;
+    left: 20%;
+    top: 260px;
+    animation: element1 2s linear infinite;
+    @include breakpoint(max-md){
+        top: 200px;
+    }
+    @include breakpoint(max-md){
+       width: 40px;
+    }
+}
+//banner Elelement
+
+//banner content three
+.banner__contenttwospace{
+    @include breakpoint(xxxl){
+       padding: 110px 0 120px;
+    }
+}
+
+.banner__thumbcustom{
+    @include breakpoint(xxxl){
+        margin-bottom: -70px;
+     }
+}
+//banner content three
+
+
+
+//banner breadcumn
+.banner__breadcumn{
+    background: url(/img/bn/breadcumndbg.jpg) no-repeat top center;
+    background-size: cover;
+}
+.breadcumnd__wrapper{
+    padding: 23px 0 0px;
+    .breadcumnd__content{
+        margin-top: -34px;
+        @include breakpoint(max-sm){
+            margin-top: -0px;
+        }
+        .d4{
+           @include breakpoint(max-xl){
+            font-size: 48px;
+            margin-bottom: 5px;
+           }
+           @include breakpoint(max-xl){
+            font-size: 36px;
+            margin-bottom: 10px;
+           }
+           @include breakpoint(max-md){
+            font-size: 32px;
+            margin-bottom: 5px;
+           }
+           @include breakpoint(max-xs){
+            font-size: 34px;
+            margin-bottom: 8px;
+           }
+        }
+    }
+    .featured__card{
+        @include breakpoint(max-sm){
+            max-width: 300px;
+            margin-top: 30px;
+        }
+    }
+    @include breakpoint(max-sm){
+        padding: 40px 0 0;
+    }
+}
+.post__requestwrapper{
+    @include breakpoint(max-sm){
+        padding: 22px 0 85px;
+    }
+}
+//banner breadcumn
+
+//profile wrapper
+.profile__customize{
+    margin-top: -202px;
+    position: relative;
+    .darrell__profile {
+        @include breakpoint(max-xl){
+            padding: 20px 18px;
+        }
+    }
+}
+.profile__wrapper{
+    padding: 102px 0 290px;
+    @include breakpoint(max-sm){
+        padding: 45px 0 280px;
+    }
+}
+//profile wrapper
+
+//from component 
+.search__component{
+    border: 1px solid var(--base);
+    border-radius: 100px;
+    padding: 8px;
+    input{
+        background: transparent;
+        border: unset;
+        outline: none;
+        color: var(--title);
+        padding-left: 20px;
+        @include breakpoint(max-lg){
+            padding-left: 5px;
+        }
+    }
+}
+//from component 
+
+//notification
+.container__customize{
+    max-width: 1600px;
+    background: #F8F9FC;
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(-180px);
+    margin-bottom: -180px;
+}
+.container__customizemain{
+    max-width: 1600px;
+    background: #F8F9FC;
+    position: relative;
+    margin: 0 auto;
+}
+.notification__item{
+    padding: 32px 32px;
+    @include breakpoint(max-xxl){
+        padding: 20px 20px;
+    }
+    @include breakpoint(max-xxl){
+        padding: 20px 17px;
+    }
+}
+.permission__pra{
+    padding: 12px 32px;
+    border-radius: 8px;
+    background: rgba(13, 71, 161, 0.03);
+    @include breakpoint(max-xxl){
+        padding: 12px 15px;
+    }
+}
+//notification
+
+//refer breadcumnd
+.setting__section{
+    .container__customizemain{
+        transform: translateY(-120px);
+    }
+}
+.setting__breadcumnd{
+    padding: 100px 0 230px;
+    @include breakpoint(max-sm){
+        padding: 40px 0 230px;
+    }
+}
+//refer breadcumnd
+

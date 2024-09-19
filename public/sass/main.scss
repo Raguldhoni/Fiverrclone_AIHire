@@ -1,0 +1,37 @@
+/*CSS Table Of Content Starts Here*/
+/*
+01. General CSS
+---------------------------
+Section css
+---------------------------
+*/
+/*CSS Table Of Content Ends Here*/
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../webfonts/bootstrap-icons.min.css";
+//--Abstracts--//
+@import "_abstracts/_mixins";
+@import "_abstracts/_variables";
+//--Abstracts--//
+
+//--Base--//
+@import "_base/_typography";
+//--Base--//
+
+//--Layout--//
+@import "_layout/_header";
+@import "_layout/_banner";
+@import "_layout/_section";
+@import "_layout/_animation";
+@import "_layout/_blog";
+@import "_layout/_footer";
+//--Layout--//
+
+//--Components--//
+@import "_components/_buttons";
+@import "_components/_range_slider.scss";
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+//--Components--//
+
+//--Base--//
+@import "_base/_responsive";
+//--Base--//
