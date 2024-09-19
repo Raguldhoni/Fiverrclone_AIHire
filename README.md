@@ -12,7 +12,7 @@ Node version 14.x
 
 ## Clone this repo
 ```bash
-git clone https://github.com/vukrosic/next14-fiverr
+https://github.com/Raguldhoni/Fiverrclone_AIHire.git
 ```
 
 ## Install packages
